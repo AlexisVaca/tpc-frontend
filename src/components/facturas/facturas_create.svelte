@@ -49,11 +49,6 @@
     onMount(() => {
         getProductos();
         getDetallesFactura($facturasEdit.id_cabecera);
-
-        // Obtener el valor de una cadena guardada en formato JSON
-        const string = localStorage.getItem("key");
-        value = JSON.parse(string);
-        formFacturas.id_cabecera(value.key1)
     });
 
     const detalles = (cantidad, precio) => {
